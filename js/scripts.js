@@ -15,10 +15,21 @@ $(document).ready(function() {
     favoriteArray.push(favoriteThing4);
     favoriteArray.push(favoriteThing5);
     favoriteArray.push(favoriteThing6);
- 
+
+
   for(x=0;x<favoriteArray.length;x++){
-    $("ul#favoriteList").append("<li>"+favoriteArray[x]+"</li>");
-  }
+
+  //  $("ul#favoriteList").append("<li>"+favoriteArray[x]+"</li>");
+   }
+
+   var fewArray = [];
+   fewArray.push(favoriteArray[1]);
+   fewArray.push(favoriteArray[0]);
+   fewArray.push(favoriteArray[2]);
+
+  $("ul#favoriteList").append("<li>"+favoriteArray[1]+"</li>");
+  $("ul#favoriteList").append("<li>"+favoriteArray[0]+"</li>");
+  $("ul#favoriteList").append("<li>"+favoriteArray[2]+"</li>");
 
   event.preventDefault();
 
